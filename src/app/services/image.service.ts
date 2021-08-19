@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class ImageService {
 
-  public flamingo: string = "assets/images/people/flamingo.jpg";
+  public flamingo: string = "assets/images/people/profile.jpg";
 
   constructor() { }
 }
