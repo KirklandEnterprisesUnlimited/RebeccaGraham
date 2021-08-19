@@ -1,6 +1,42 @@
 .app-container {
     height: 100vh;
     width: 100%;
+    background: url('../../../assets/images/backgrounds/shiny_cubes.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.picture-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture-container {
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.card-part {
+    backdrop-filter: blur(6px);
+    border: 1px solid lavender;
+    border-radius: 5px;
+    margin: 40px 10px;
+    box-shadow: 0px 5px 30px rebeccapurple, -15px 15px 0.35rem grey, 3px -3px 1rem white;
+}
+
+.personal-info {
+    margin: 0 20px;
+    color: lavender;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid lightblue;
+    box-shadow: 0px 5px 30px rebeccapurple, -15px 15px 0.35rem grey, 3px -3px 1rem white;
 }
 
 ul{
