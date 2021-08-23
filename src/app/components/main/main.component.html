@@ -2,7 +2,7 @@
 <div class="app-container">
     <div class="picture-row">
         <div class="picture-container">
-            <img [src]="imageService.flamingo" alt="That Boi Kirk">
+            <img [src]="imageService.profile" alt="That Boi Kirk">
         </div>
     </div>
     <div class="card-part">
@@ -22,5 +22,11 @@
             <!-- <li><i class="fab fa-snapchat-ghost"></i></li> -->
             <li><a href="https://twitter.com/StevoKirk" target="_blank"> <i class="fab fa-twitter"></i> </a></li>
         </ul>
+    </div>
+
+    <div class="download-vcf">
+        <a href="javascript:void(0)" id="downloadButton" [vcdDownloadVCard]="vCard">
+            <span>Add Contact</span>
+        </a>
     </div>
 </div>
