@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './components/main/main.component';
 import { ImageService } from './services/image.service';
 
+import { NgxVcardModule } from "ngx-vcard";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -13,7 +15,8 @@ import { ImageService } from './services/image.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxVcardModule
   ],
   providers: [
     ImageService
