@@ -24,12 +24,12 @@
     border-radius: 5px;
     margin: 40px 10px;
     box-shadow: 0px 5px 30px rebeccapurple, -15px 15px 0.35rem grey, 3px -3px 1rem white;
-    animation: animate 6.5s ease-in-out infinite;
+    animation: floatingCard 6.5s ease-in-out infinite;
     text-align: center;
     font-family: Gilroy-Light;
 }
 
-@keyframes animate {
+@keyframes floatingCard {
     0%, 100%{
         transform: translate3d(0.5ch, -0.05in, -3em);
     }
@@ -119,11 +119,11 @@ li a {
     background-size: 400%;
     filter: blur(20px);
     transition: 0.5s;
-    animation: animate 20s linear infinite;
+    animation: animateAddContact 20s linear infinite;
     z-index: -1;
 }
 
-@keyframes animate {
+@keyframes animateAddContact {
     0% {
         background-position: 0 0;
     }
