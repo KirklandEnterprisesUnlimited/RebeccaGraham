@@ -14,6 +14,7 @@ export class MainComponent implements OnInit {
 
   public firstName: string = 'Rebecca';
   public lastName: string = 'Graham';
+  public businessName: string = 'Rebecca Graham, Teacher and Leader Development LLC';
   public occupation: string = 'Educational Consultant';
   public phoneNumber: string = '404-309-3455';
   public email: string = 'rebecca.graham.theconsultant@gmail.com';
@@ -25,18 +26,13 @@ export class MainComponent implements OnInit {
 
   public vCard: VCard = {
     name: {
-      firstNames: "Rebecca",
-      lastNames: "Graham",
+      firstNames: this.firstName,
+      lastNames: this.lastName,
     },
-    telephone: ["912-536-7419"],
-    email: ["skirkland.job@gmail.com"],
-    workEmail: ["kirklandenterprisesunlimited@gmail.com"],
-    role: "CEO of Kirkland Enterprises Unlimited",
-    url: "https://BigMoneyKirk.github.io/QR/",
-    sound: "../../assets/sounds/Stephen_Kirkland.m4a",
-    logo: "../../assets/images/logos/KEU_Logo_FullColor.png",
-    photo: "Li4vLi4vYXNzZXRzL2ltYWdlcy9sb2dvcy9LRVVfTG9nb19GdWxsQ29sb3IucG5n",
-    note: "Creator of the QR Virtual Business Card"
+    telephone: [this.phoneNumber],
+    email: [this.email],
+    workEmail: [this.email],
+    role: `CEO of ${this.businessName}`,
+    url: "https://www.linkedin.com/in/rebecca-graham-m-ed-394446231/",
   };
-
 }
