@@ -12,13 +12,21 @@ export class MainComponent implements OnInit {
 
   constructor(public imageService: ImageService) { }
 
+  public firstName: string = 'Rebecca';
+  public lastName: string = 'Graham';
+  public occupation: string = 'Educational Consultant';
+  public phoneNumber: string = '404-309-3455';
+  public email: string = 'rebecca.graham.theconsultant@gmail.com';
+
+  // 'Rebecca Graham, Teacher and Leader Development LLC';
+
   ngOnInit() {
   }
 
   public vCard: VCard = {
     name: {
-      firstNames: "Stephen",
-      lastNames: "Kirkland",
+      firstNames: "Rebecca",
+      lastNames: "Graham",
     },
     telephone: ["912-536-7419"],
     email: ["skirkland.job@gmail.com"],
